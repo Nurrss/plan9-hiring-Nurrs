@@ -4,4 +4,5 @@
  * @param {object} query
  * @returns {boolean}
  */
-export function compare(doc = {}, query = {}) {}
+export function compare(doc, query) {}
+

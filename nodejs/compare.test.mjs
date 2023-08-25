@@ -7,7 +7,7 @@
  */
 import { it, test, todo, skip } from "node:test";
 import assert from "node:assert";
-import { sute } from "../lib.mjs";
+import { suite } from "../lib.mjs";
 import { compare } from "./compare.mjs";
 //
 let _id = 0;
@@ -36,9 +36,15 @@ const queryByNestedConditions = {
 //
 suite("compare", (s) => {
 	test("compare(docs[0], queryById) === true", (t) => {});
+	
 	test("compare(docs[1], queryStrictByAgeInNestedObject) === true", () => {});
+
 	test("compare(docs[0], queryBy$gte) === true", () => {});
+
 	test("compare(docs[0], queryByNestedConditions) === false", () => {});
+
 	test("compare(docs[1], queryByNestedConditions) === true", () => {});
+
 	test("compare(docs[2], queryByNestedConditions) === true", () => {});
+	
 });
